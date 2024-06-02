@@ -1,17 +1,20 @@
 ---
 import Container from "@components/container.astro";
 import Cta from "@components/cta.astro";
-import Features from "@components/features.astro";
+import Features from "../prebuilt-components/solt-features.astro";
 import Hero from "@components/hero.astro";
 import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
+import Pricing from "../prebuilt-components/pricing.astro";
+import Preview from "../prebuilt-components/preview.astro";
 ---
 
 <Layout title="">
   <Container>
     <Hero />
     <Features />
-    <Logos />
+    <Preview />
+    <Pricing />
     <Cta />
   </Container>
 </Layout>

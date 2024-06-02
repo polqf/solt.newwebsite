@@ -1,8 +1,8 @@
 ---
 import { Picture } from "astro:assets";
-import heroImage from "assets/hero.png";
-import Link from "@components/ui/link.astro";
-import { Icon } from "astro-icon/components";
+import heroImage from "assets/app-icon.png";
+import appStoreImage from "assets/app-store.png";
+import DownloadAppStore from "prebuilt-components/download-app-store.astro";
 ---
 
 <main
@@ -10,44 +10,24 @@ import { Icon } from "astro-icon/components";
   <div class="py-6 md:order-1 hidden md:block">
     <Picture
       src={heroImage}
-      alt="Astronaut in the air"
-      widths={[200, 400, 600]}
+      alt="Solt"
+      width=400
       sizes="(max-width: 800px) 100vw, 620px"
       loading="eager"
       format="avif"
+      class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center aspect-square"
     />
   </div>
   <div>
     <h1
       class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Marketing website done with Astro
+      Achieve Peak Real Estate Profitability
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Astroship is a starter template for startups, marketing websites & landing
-      pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly
-      create any website with this starter.
+      Step onto the cutting edge of real estate investment with Solt.<wbr /> Achieve Peak Real Estate Profitability.
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
-      <Link
-        href="#"
-        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
-        target="_blank"
-        class="flex gap-1 items-center justify-center"
-        rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
-
-         Download for Free
-      </Link>
-      <Link
-        size="lg"
-        style="outline"
-        rel="noopener"
-        href="https://github.com/surjithctly/astroship"
-        class="flex gap-1 items-center justify-center"
-        target="_blank">
-        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-         GitHub Repo
-      </Link>
+      <DownloadAppStore />
     </div>
   </div>
 </main>
