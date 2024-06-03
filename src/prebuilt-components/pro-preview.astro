@@ -1,15 +1,14 @@
 ---
 import { getCollection } from "astro:content";
 import { Picture } from "astro:assets";
-import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
-import ProImage1 from "assets/pro/pro1_EN.png";
-import ProImage2 from "assets/pro/pro2_EN.png";
-import ProImage3 from "assets/pro/pro3_EN.png";
-import ProImage4 from "assets/pro/pro4_EN.png";
-import ProImage5 from "assets/pro/pro5_EN.png";
-import ProImage6 from "assets/pro/pro6_EN.png";
+import ProImage1 from "/public/images/pro/pro1_EN.png";
+import ProImage2 from "/public/images/pro/pro2_EN.png";
+import ProImage3 from "/public/images/pro/pro3_EN.png";
+import ProImage4 from "/public/images/pro/pro4_EN.png";
+import ProImage5 from "/public/images/pro/pro5_EN.png";
+import ProImage6 from "/public/images/pro/pro6_EN.png";
 
 
 const soltProFeatures = [
@@ -55,9 +54,9 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 <Container>
   
   <Sectionhead>
-    <Fragment slot="title">Features preview</Fragment>
+    <Fragment slot="title">PRO Features preview</Fragment>
     <Fragment slot="desc">
-      Check them out!
+      Go even further with Solt PRO!
     </Fragment>
   </Sectionhead>
 
